@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import goTo from 'vuetify/es5/services/goto'
 import Layout from '../views/index/Layout.vue'
 import Dashboard from '../views/index/Dashboard.vue'
+import My from '../views/my/My.vue'
 
 Vue.use(VueRouter)
 
@@ -58,6 +59,11 @@ const routes = [
         path: '/permission',
         name: 'Permission',
         component: () => import('../views/permission/Permission.vue')
+      },
+      {
+        path: '/my',
+        name: 'My',
+        component: My
       }
     ]
   },
